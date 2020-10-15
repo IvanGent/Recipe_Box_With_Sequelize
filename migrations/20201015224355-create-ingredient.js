@@ -10,7 +10,7 @@ module.exports = {
       },
       amount: {
         allowNull: false,
-        type: Sequelize.NUMERIC
+        type: Sequelize.NUMERIC(5, 2)
       },
       measurementUnitId: {
         allowNull: false,
@@ -19,7 +19,7 @@ module.exports = {
       },
       foodStuff: {
         allowNull: false,
-        type: Sequelize.STRING
+        type: Sequelize.STRING(500)
       },
       recipeId: {
         allowNull: false,
